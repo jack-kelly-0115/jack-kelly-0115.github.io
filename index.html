@@ -1,0 +1,676 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+  position: absolute;
+  background-color: black;
+  width: 400px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  right: 520px;
+}
+#pan{
+    position: fixed;
+    display: none;
+    top: 150px;
+    right: 200px;
+    width: 200px;
+    opacity: 1
+    border-radius: 15px 50px 30px 5px;
+}
+#tub{
+  position: fixed;
+  display: none;
+  top: 50px;
+  left: 200px;
+  width:200px;
+}
+#first{
+  cursor: crosshair
+}
+#first:hover{
+  text-shadow: -490px 200px 0px #0DD0EB
+}
+#one:hover{
+  color: hotpink;
+  cursor: help;
+}
+#two:hover{
+  color: yellow;
+  cursor: help;
+}
+#three:hover{
+  color: #0DD0EB;
+  cursor: help;
+}
+#repeatone:hover{
+  color: hotpink;
+  cursor: help;
+}
+#repeattwo:hover{
+  color: yellow;
+  cursor: help;
+}
+#repeatthree:hover{
+  color: #0DD0EB;
+  cursor: help;
+}
+#facade:link {
+  color: white;
+}
+#facade:visited {
+  color: #0DD0EB;
+}
+
+#facade:hover {
+  color: #0DD0EB;
+}
+
+#facade:active {
+  color: #0DD0EB;
+}
+#destruction:link {
+  color: white;
+}
+#destruction:visited {
+  color: #0DD0EB;
+}
+
+#destruction:hover {
+  color: #0DD0EB;
+}
+
+#destruction:active {
+  color: #0DD0EB;
+}
+#shoot:link {
+  color: white;
+}
+#shoot:visited {
+  color: #0DD0EB;
+}
+
+#shoot:hover {
+  color: #0DD0EB;
+}
+
+#shoot:active {
+  color: #0DD0EB;
+}
+#hrc:link {
+  color: white;
+}
+#hrc:visited {
+  color: #0DD0EB;
+}
+
+#hrc:hover {
+  color: #0DD0EB;
+}
+
+#hrc:active {
+  color: #0DD0EB;
+}
+#attract:link {
+  color: white;
+}
+#attract:visited {
+  color: #0DD0EB;
+}
+
+#attract:hover {
+  color: #0DD0EB;
+}
+
+#attract:active {
+  color: #0DD0EB;
+}
+#jack{
+  position: fixed;
+  display: none;
+  top:300px;
+  left:100px;
+  width: 150px;
+}
+#identity:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#identitytwo:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#identitythree:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#empower:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#endseven:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#singular:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#reveal:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#me:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#who:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#will:hover{
+  color: #0DD0EB;
+  font-family: Impact;
+  font-size: 100px;
+}
+#black{
+  position: fixed;
+  display: none;
+  top:300px;
+  left:100px;
+  opacity: .7;
+  width:155px;
+  height: 200px
+}
+#straight{
+  animation-name: pride;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#straighttwo{
+  animation-name: pride;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#deh{
+  position: fixed;
+  display: none;
+  top: 375px;
+  right: 200px;
+  width: 250px;
+}
+#lizzo{
+  position: fixed;
+  display: none;
+  top: 600px;
+  left: 200px;
+  width: 150px;
+}
+#happy:hover{
+  color: yellow
+}
+#gender{
+  position: fixed;
+  display: none;
+  top: 600px;
+  right: 100px;
+  width: 200px;
+}
+#polarized:hover{
+  color: lightblue
+}
+#gendertwo:hover{
+  color: pink
+}
+#pride{
+  position: fixed;
+  display: none;
+  top: 350px;
+  left: 315px;
+  width: 150px;
+}
+#sad:hover{
+  color: #0F68D2;
+  font-family: Courier
+}
+#man:hover{
+  text-decoration: line-through;
+  color: blue;
+  font-size: 200px;
+  font-family: Impact
+}
+#emily{
+  position: fixed;
+  display: none;
+  top: 300px;
+  right: 30px;
+  width: 150px;
+}
+#stephen{
+  position: fixed;
+  display: none;
+  top: 400px;
+  right: 50px;
+  width: 100px;
+}
+#rain{
+  position: fixed;
+  display: none;
+  top: 50px;
+  right: 30px;
+  width: 150px;
+}
+#current{
+  position: fixed;
+  display: none;
+  top: 270px;
+  left: 225px;
+  width: 150px;
+}
+#need:hover{
+  color:red;
+  font-family: Impact;
+  font-size: 100px;
+}
+#none:hover{
+  color:red;
+  font-family: Impact;
+  font-size: 100px;
+}
+#nonetwo:hover{
+  color:red;
+  font-family: Impact;
+  font-size: 100px;
+}
+#fightone:hover{
+  color:red;
+  font-family: Impact;
+  font-size: 100px;
+}
+#fighttwo:hover{
+  color:red;
+  font-family: Impact;
+  font-size: 100px;
+}
+#all{
+  animation-name: pan;
+  animation-duration: 8s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#queer{
+  animation-name: pan;
+  animation-duration: 8s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#favs{
+  position: fixed;
+  display: none;
+  top: 525px;
+  right: 275px;
+  width: 175px;
+}
+#pl:hover{
+  color: white
+}
+#billions:link {
+  color: white;
+}
+#billions:visited {
+  color: #0DD0EB;
+}
+
+#billions:hover {
+  color: #0DD0EB;
+}
+
+#billions:active {
+  color: #0DD0EB;
+}
+#obsolete:hover{
+  color: #0DD0EB;
+}
+#obsolete{
+  cursor: pointer;
+}
+#queerness{
+  animation-name: pride;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#p:hover{
+  color:#FF0000;
+  font-family: Impact;
+  font-size: 100px;
+}
+#o:hover{
+  color:#FF8700;
+  font-family: Impact;
+  font-size: 100px;
+}
+#w:hover{
+  color:#FFF700;
+  font-family: Impact;
+  font-size: 100px;
+}
+#e:hover{
+  color:#3AFF00;
+  font-family: Impact;
+  font-size: 100px;
+}
+#r:hover{
+  color:#00FFFF;
+  font-family: Impact;
+  font-size: 100px;
+}
+#pow:hover{
+  color:#7000FF;
+  font-family: Impact;
+  font-size: 100px;
+}
+#pridepower{
+  position: fixed;
+  display: none;
+  top: 100px;
+  left: 30px;
+  width: 150px;
+}
+#advocacy{
+  position: fixed;
+  display: none;
+  top: 35px;
+  right: 300px;
+  width: 160px;
+}
+#global{
+  position: fixed;
+  display: none;
+  bottom: 150px;
+  left: 85px;
+  width: 125px;
+}
+#earth{
+  animation-name: earth;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#earth{
+  cursor: pointer;
+}
+#earthtwo{
+  animation-name: earth;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#earthtwo{
+  cursor: pointer;
+}
+#happy{
+  cursor: pointer;
+}
+#sad{
+  cursor: pointer;
+}
+#taboo:hover{
+  font-family: Comic;
+  text-decoration: line-through;
+}
+#trump{
+  position: fixed;
+  display: none;
+  top: 280px;
+  right: 325px;
+  width: 140px;
+}
+#bled{
+  position: fixed;
+  display: none;
+  bottom: 200px;
+  left: 325px;
+  width: 155px;
+}
+#justice{
+  position: fixed;
+  display: none;
+  bottom: 75px;
+  right: 325px;
+  width: 130px;
+}
+#natural{
+  animation-name: earth;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#patriarchy{
+  cursor: pointer
+}
+#patriarchy:hover{
+  color:pink;
+  font-family:Courier New;
+  font-size: 80px;
+}
+#penis:hover{
+  text-transform: uppercase;
+}
+#vagina:hover{
+  text-transform: uppercase;
+}
+#treat:hover{
+  text-transform: uppercase;
+}
+#radical:hover{
+  color:white;
+  font-family: Impact;
+  font-size: 250px;
+}
+#comjust:hover{
+  color:#00FFFF;
+  font-family: Impact;
+  font-size: 100px;
+}
+#secretsrevealed{
+  animation-name: pan;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+#wordone{
+  position: absolute;
+  display: none;
+  width:125px;
+}
+#wordtwo{
+  position: absolute;
+  display: none;
+  width:125px;
+}
+#wordthree{
+  position: absolute;
+  display: none;
+  width:125px;
+}
+#wordfour{
+  position: absolute;
+  display: none;
+  width:125px;
+}
+#wordfive{
+  position: absolute;
+  display: none;
+  width:125px;
+}
+#wordsix{
+  position: absolute;
+  display: none;
+  width:125px;
+}
+@keyframes pride {
+  0% {color:#FF0000;}
+  16% {color:#FF8700;}
+  32% {color:#FFF700;}
+  48% {color:#3AFF00;}
+  64% {color:#00FFFF;}
+  80% {color:#7000FF}
+  100% {color:#FD82F9;}
+}
+@keyframes pan {
+  0% {color:hotpink;}
+  50% {color:yellow;}
+  100% {color:#0DD0EB;}
+}
+@keyframes earth {
+  0% {color:#3AFF00;}
+  100% {color:#00FFFF;}
+}
+    </style>
+  <title>A better world.</title>
+  <link rel="shortcut icon" href="world.gif">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="final.js"></script>
+<img id=pan src="pan.jpg">
+<img id=tub src="hottub.jpeg">
+<img id=jack src="jack.JPG">
+<img id=black src="black.jpg">
+<img id=deh src="deh.jpg">
+<img id=lizzo src="lizzo.jpg">
+<img id=gender src="gender.png">
+<img id=pride src="pride.gif">
+<img id=emily src="emily.jpg">
+<img id=stephen src="stephen.jpg">
+<img id=rain src="rain.jpg">
+<img id=favs src="favs.jpeg">
+<img id=pridepower src="pridepower.jpg">
+<img id=advocacy src="advocacy.jpg">
+<img id=global src="global.png">
+<img id=trump src="trump.jpg">
+<img id=bled src="bled.jpg">
+<img id=justice src="justice.png">
+<video id=current loop controls src="currentstate.mp4" type="video/mp4"></video>
+  </head>
+  <body>
+<div>Sitting <span id=first>there</span><br>
+I confide my deepest <span id=one>se</span><span id=two>cre</span><span id=three>ts</span></div>
+<br>
+<div>I often live with my <a id=facade href="https://www.google.com/search?q=suburbia&rlz=1C5CHFA_enUS776US776&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjnku6CsuzjAhXlRt8KHXAgBx0Q_AUIESgB&biw=1440&bih=821">facade</a>
+<br>
+But today I show <span id=identity>who I really am</span></div>
+<br>
+<div>Why is it that we <span id=conceal>conceal</span> ourselves?</div>
+<br>
+<div><span id=stigmas>Stigmas</span><br>
+Societal “<span id=norms>norms</span>”<br>
+We are scared of what others will think</div>
+<br>
+<div>I try to act like everyone else
+<br> But that is not who <span id=identitytwo>I am</span></div>
+<br>
+<div>I try to act <span id=straight>straight</span> in a heteronormative world <br>
+I act <span id=happy>happy</span> in a world where trouble with mental health is weakness <br>
+I act like a “man” in a world of <span id=polarized>polarized</span> <span id=gendertwo>gender</span> norms</div>
+<br>
+<div>I am not <span id=straighttwo>straight</span>
+<br>I am <span id=sad>not happy</span>
+<br>I have more depth than just being a <span id=man>“man”</span></div>
+<br>
+<div>I am <a id=attract href="https://www.google.com/search?q=what+is+pansexuality&rlz=1C5CHFA_enUS776US776&oq=What+is+pansexuality&aqs=chrome.0.0l6.4195j1j7&sourceid=chrome&ie=UTF-8">attracted</a> to <span id=all>all</span> <span id=queer>genders</span><br>
+Inside, I often find live void of <span id=joy>joy</span></div>
+<br>
+<div>We <span id=need>need</span> a better <span id=world>world</span> to live in</div>
+<br>
+<div>I told my deepest secrets<br>
+But only to my <span id=pl>two</span> closest friends<br>
+There are <a id=billions href="https://www.worldometers.info/world-population/">billions</a> of people who don’t know <span id=me>ME</span></div>
+<br>
+<div>They won’t know <span id=who>me</span><br>
+Unless we <br><span id=fightone>fight</span><br> to make a world where stigmas are <span id=obsolete>obsolete</span><br>
+Unless we <br><span id=fighttwo>fight</span><br> to make a world where <span id=queerness>queerness</span> has <span id=p>p</span><span id=o>o</span><span id=w>w</span><span id=e>e</span><span id=r>r</span><span id=pow>!</span></div>
+<br>
+<div>There is power in <span id=activism>activism</span><br>
+<span id=singular>I am one person</span> <br>
+But I want to <span id=earth>change the world</span><br>
+<span id=will>I will</span> change the world</div>
+<br>
+<div>And I will not only change the world so I can show who <span id=reveal>I am</span><br>
+I want a safer, better, more <a id=hrc href=https://give.hrc.org/page/28950/donate/1?ea.tracking.id=dr_don_bpi_search2019&ea.tracking.id=dr_don_bpi_search2018&utm_source=GS&utm_medium=AD&utm_campaign=201709AQ&utm_term=Human%20rights%20campaign&utm_content=246582531280&gclid=EAIaIQobChMIzbe2r9ju4wIVxx-GCh2LDAQ_EAAYASAAEgK3UfD_BwE>equal</a> world</div>
+<br>
+<div>A world where 4th period <span id=class>Global class</span> is safe<br>
+Where I am not worried about a <a id=shoot href="https://www.google.com/search?rlz=1C5CHFA_enUS776US776&ei=hr1JXZ6GIona5gKilqO4Cg&q=When+will+Congress+pass+common+sense+gun+regulation%3F&oq=When+will+Congress+pass+common+sense+gun+regulation%3F&gs_l=psy-ab.3..33i299l2.10865.13629..13837...0.0..0.84.818.11......0....1..gws-wiz.......35i39j33i10i299j33i10.VIUuUQVf-n4&ved=0ahUKEwie4bmB5-7jAhUJrVkKHSLLCKcQ4dUDCAo&uact=5">shooter</a> coming through the door<br></div>
+<br>
+A world where the “isms” and “phobias” of the world are <span id=taboo>taboo</span></div>
+<br><br>
+<div> <span id=none>No more</span> </div>
+<br>
+<div><span id=cause>Racism</span>
+<span id=causetwo>Homophobia</span>
+<span id=causethree>Sexism</span>
+<span id=causefour>Xenophobia</span>
+<span id=causefive>Transphobia</span><br>
+<span id=causesix>Anti-Semitism</span>
+<span id=causeseven>Islamophobia</span></div>
+<br>
+<span id=nonetwo>No more</span>
+<br>
+<br>
+<div>I want a world where I can experience its <span id=natural>natural beauty</span><br>
+A world that is not <a id=destruction href="https://www.smithsonianmag.com/smart-news/greenland-lost-record-breaking-125-billion-tons-ice-single-day-180972808/">destroyed</a> by the people that live on it</div>
+<br>
+<div>I want a world where <span id=penis>penises</span> and <span id=vagina>vaginas</span> don't determine our <span id=treat>treatment</span>
+<br> A world where we tear down the <span id=patriarchy>patriarchy</span></div>
+<br>
+<div>I want a world where this <span id=radical>“radical”</span> change isn’t radical
+Where this change is common sense <span id=comjust>justice</span></div>
+<br>
+<div>I want a world where my deepest <span id=repeatone>se</span><span id=repeattwo>cre</span><span id=repeatthree>ts</span> aren’t <span id=secretsrevealed>secrets</span>
+<br>I want a world where I can express myself and feel <span id=empower>empowered</span> for my <span id=identitythree>identity</span>
+</div>
+<br>
+This can be our <span id=earthtwo>world</span>
+<br>
+We must use activism...
+<br>
+<br>
+<div> <span id=endone>To</span>
+<br>
+<span id=endtwo> Fight</span>
+<br>
+<span id=endthree>For</span>
+<br>
+<span id=endfour>A</span>
+<br>
+<span id=endfive>World</span>
+<br>
+<span id=endsix>Like</span>
+<br>
+<span id=endseven>This:</span></div><br><br>
+
+<br>
+<br>
+<img id=wordone src="wordone.jpg">
+<img id=wordtwo src="wordtwo.jpg">
+<img id=wordthree src="wordthree.jpg">
+<img id=wordfour src="wordfour.jpg">
+<img id=wordfive src="wordfive.jpg">
+<img id=wordsix src="wordsix.jpg">
+<br>
+_________________
+  </body>
+</html>
